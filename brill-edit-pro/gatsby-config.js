@@ -10,7 +10,7 @@ module.exports = {
       options: {
         repositoryName: `brill-edit-pro`
       }
-    }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
