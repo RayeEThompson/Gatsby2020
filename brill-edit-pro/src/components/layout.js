@@ -12,7 +12,6 @@ import styled from "styled-components"
 import "./layout.css"
 
 const Main = styled.main`
-  max-width: 800px;
   margin: 0 auto;
 `
 
@@ -50,7 +49,7 @@ const NavLink = styled.div`
     font-size: 16px;
 
     &:hover {
-      color: orange;
+      color: hotpink;
     }
   }
 `
@@ -69,7 +68,7 @@ const NavLinks = styled.div`
 `
 
 const Branding = styled.div`
-  color: orange;
+  color: hotpink;
   font-weight: bold;
   margin: auto 0;
   font-size: 20px;
