@@ -8,9 +8,16 @@ module.exports = {
     {
       resolve: `@prismicio/gatsby-source-prismic-graphql`,
       options: {
-        repositoryName: `brill-edit-pro`
+        repositoryName: 'brill-edit-pro',
+        pages: [{
+          type: 'Page',
+          match: '/:uid',
+          path: '/',
+          component: require.resolve('./src/templates/page.js')
+        }]
       }
     },
+    'gatsby-plugin-styled-components',
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
