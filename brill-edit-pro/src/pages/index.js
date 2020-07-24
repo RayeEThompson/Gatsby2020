@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SliceZone from "../components/sliceZone"
 
@@ -38,6 +37,18 @@ export const query = graphql`
                   call_to_action_title
                   content
                   featured_image
+                }
+              }
+              ... on PRISMIC_HomepageBodyPrice_list {
+                type
+                primary {
+                  title
+                }
+                fields {
+                  price_list_description
+                  price_list_title
+                  price_type
+                  price_per_month
                 }
               }
             }
