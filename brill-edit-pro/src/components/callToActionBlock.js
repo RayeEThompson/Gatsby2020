@@ -9,17 +9,17 @@ const CallToActionBlockWrapper = styled.section`
   margin: 20px 0;
   background-color: #eeee;
 
-  .call-to-action-content{
+  .call-to-action-content {
     display: flex;
-    .featured-image-wrapper{
-        margin: auto 10px;
-        background-color: white;
-        padding: 10px;
-        border-radius: 10px;
+    .featured-image-wrapper {
+      margin: auto 10px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
     }
-    img{
-        max-width: 100px;
-        margin: 0;
+    img {
+      max-width: 100px;
+      margin: 0;
     }
   }
 `
@@ -31,14 +31,12 @@ const Button = styled.div`
   cursor: pointer;
 
   a {
-    color: white;
     display: inline-block;
     padding: 4px 8px;
     text-decoration: none;
     font-weight: bold;
 
     &:hover {
-      color: black;
       background-color: #00cdcd;
       border-radius: 8px;
     }
@@ -58,7 +56,7 @@ const CallToActionBlock = ({
       <div className="call-to-action-content">
         <RichText render={content} />
         <div className="featured-image-wrapper">
-            <img src={featuredImage} alt="featured"/>
+          <img src={featuredImage} alt="featured" />
         </div>
       </div>
       <Button>

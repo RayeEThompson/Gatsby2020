@@ -17,14 +17,15 @@ const PriceList = ({ title, prices }) => {
       <RichText render={title} />
       <div className="prices">
         {prices.map((price, i) => {
-            return (
+          return (
             <PriceItem
-                key={i}
-                title={price.price_list_title}
-                description={price.price_list_description}
-                price={price.price_per_month}
+              key={i}
+              title={price.price_list_title}
+              description={price.price_list_description}
+              price={price.price_per_month}
+              mostPopular={price.price_type === "most popular"}
             />
-            )
+          )
         })}
       </div>
     </PriceListWrapper>
