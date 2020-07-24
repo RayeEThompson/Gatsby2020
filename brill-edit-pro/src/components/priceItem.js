@@ -44,11 +44,7 @@ const PriceItemWrapper = styled.div`
 const PriceItem = ({ title, price, description, mostPopular }) => {
   return (
     <PriceItemWrapper mostPopular={mostPopular}>
-      {mostPopular && 
-        <div className="mostPopular">
-            Most Popular
-        </div>
-      }
+      {mostPopular && <div className="mostPopular">Most Popular</div>}
       <RichText render={title} />
       <div className="price">
         ${price}
